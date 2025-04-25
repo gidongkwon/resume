@@ -77,7 +77,7 @@
   )
   #work-detail(
     title: "방송용 위젯 표시를 위한 OBS Browser Plugin에서의 레이아웃 트러블슈팅",
-    description: "OBS 크로미움의 버전이 77로 낮아 CSS grid와 flex를 제대로 쓸 수 없는 상황이었습니다. 공통 사용 컴포넌트를 특정 환경 전용으로 작성하여 두 벌 관리해야 하는 상황에 처해있었습니다. CSS-in-JS 솔루션인 Stitches로 Flex 컴포넌트를 구현하여 사용하고 있었기 때문에, 최대한 외부의 기존 레이아웃 코드를 건드리지 않고 Flex 컴포넌트 내부에서 분기하여 negative margin으로 gap 동작을 폴리필하는 코드를 추가해 하는 일을 피하고 코드베이스의 복잡도를 크게 늘리지 않는 선에서 관리할 수 있었습니다.",
+    description: "OBS 크로미움의 버전이 77로 낮아 CSS grid와 flex를 쓸 수 없었습니다. 이미 사이트의 다른 부분은 완성되어 있었기 때문에 공통 사용 컴포넌트를 특정 환경 전용으로 작성하여 두 벌 관리해야 하는 상황에 처해있었습니다. CSS-in-JS 라이브러리 Stitches로 Flex 컴포넌트를 구현하여 레이아웃을 구성하고 있었기 때문에, 최대한 외부의 기존 레이아웃 코드를 건드리지 않고 Flex 컴포넌트 내부에서 분기하여 negative margin으로 gap 동작을 폴리필하는 코드를 추가하는 방식으로, wrap 동작의 정확성을 희생하여 코드베이스의 복잡도를 크게 늘리지 않는 선에서 관리할 수 있었습니다.",
   )
   #work-detail(
     title: "국제화 대응",
@@ -88,8 +88,8 @@
 = Experiences
 - Web #h(0.5em) #display-year([_2021-_]) #h(1fr) #chips-in-one((tech-stacks.react, tech-stacks.svelte, tech-stacks.typescript, tech-stacks.tailwind, tech-stacks.shadcn, tech-stacks.etc))
   - 오픈소스 영상 편집 소프트웨어 #link("https://github.com/cartesiancs/nugget-app", [Nugget]) 기여
-    - 캔버스 기반 렌더러 리팩토링을 통한 2000줄 이상의 중복 코드 제거 #link("https://github.com/cartesiancs/nugget-app/pull/38", [\#38]) #link("https://github.com/cartesiancs/nugget-app/pull/33", [\#33])
-    - 필터 로직 재설계를 통한 UI 스터터링 제거 #link("https://github.com/cartesiancs/nugget-app/pull/36", [\#36])
+    - 캔버스 기반 렌더러를 리팩토링하여 약 2000줄의 중복 코드 제거 #link("https://github.com/cartesiancs/nugget-app/pull/38", [\#38]) #link("https://github.com/cartesiancs/nugget-app/pull/33", [\#33])
+    - WebGL 필터 로직 재설계를 통한 UI 스터터링 제거 #link("https://github.com/cartesiancs/nugget-app/pull/36", [\#36])
   - #link("https://github.com/gidongkwon/ecs-collision-webworker", [ecs-collision-webworker]), Web Worker를 사용한 ECS 기반의 게임 충돌 계산 속도 개선 실험
   - #link("https://github.com/gidongkwon/logseq-plugin-tags", [logseq-plugin-tags]), Logseq에서 Obsidian의 태그 기능을 모사한 플러그인
   - kana-hangul, 일본어 가나를 한국어 발음으로 옮겨주는 ReScript 라이브러리 #badge([Private])
