@@ -1,8 +1,8 @@
 #import "date.typ"
-#import "tech-stack.typ"
+#import "chips.typ" as tech-stack
 
 #let project-type = (
-  team: member-count => "팀 프로젝트, " + str(member-count) + "인",
+  team: member-count => "팀 프로젝트 - " + str(member-count) + "인",
   personal: "개인 프로젝트",
 )
 
@@ -53,7 +53,7 @@
   children,
 ) = _entry(
   [#name],
-  [#type #role],
+  [#type / #role],
   [#summary],
   date-from,
   date-to,

@@ -22,7 +22,7 @@
 
 #let display-year(year) = {
   [
-    #set text(luma(30%), number-width: "tabular")
+    #set text(luma(53%), number-width: "tabular", 0.8em, baseline: -0.1em)
     #year
   ]
 }
