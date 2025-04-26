@@ -47,7 +47,7 @@
   )
 ]
 
-= Featured Projects
+= Featured Project
 #project-entry(
   name: "aya.gg v1",
   type: (project-type.team)(2),
@@ -73,7 +73,7 @@
   )
   #work-detail(
     title: "FCP 개선",
-    description: "Cloudflare CDN을 붙이고 SSR을 구현한 후 FCP가 비정상적으로 높아진 것을 발견했습니다. react-query를 통해 Hydration 되는 데이터의 크기가 비정상적으로 큰 것을 감지했습니다. 또한 BFF와 API서버 간 전송이 의도치 않게 Cloudflare를 통해 이루어지는 것이 RTT를 크게 증가시키는 원인이라는 것을 발견했습니다. 이를 해결하기 위해 브라우저 캐시를 활용할 수 있도록 Hydration 과정을 없애고 SSR과 CSR시 사용하는 데이터 소스를 분리하는 과정을 거치고, BFF와 API서버 간의 통신을 Cloudflare를 거치지 않고 직접 통신하도록 변경했습니다. 이로 인해 첫 접속 기준 FCP가 10초에서 1.5초 이내로 개선되었습니다.",
+    description: "Cloudflare CDN을 붙이고 SSR을 구현한 후 FCP가 비정상적으로 높아진 것을 발견했습니다. React Query를 통해 Hydration 되는 데이터의 크기가 비정상적으로 큰 것을 감지했습니다. 또한 BFF와 API서버 간 전송이 의도치 않게 Cloudflare를 통해 이루어지는 것이 RTT를 크게 증가시키는 원인이라는 것을 발견했습니다. 이를 해결하기 위해 브라우저 캐시를 활용할 수 있도록 Hydration 과정을 없애고 SSR과 CSR시 사용하는 데이터 소스를 분리하는 과정을 거치고, BFF와 API서버 간의 통신을 Cloudflare를 거치지 않고 직접 통신하도록 변경했습니다. 이로 인해 첫 접속 기준 FCP가 10초에서 1.5초 이내로 개선되었습니다.",
   )
   #work-detail(
     title: "방송용 위젯 표시를 위한 OBS Browser Plugin에서의 레이아웃 트러블슈팅",
@@ -97,13 +97,13 @@
 - Game Development #h(0.5em) #display-year([2014-]) #h(1fr) #chips-in-one((tech-stacks.unity, tech-stacks.csharp, tech-stacks.directx9, tech-stacks.cpp))
   - Unity 에디터 API를 활용한 엔진 내에서 사용할 수 있는 레벨 에디터 개발
   - #link("https://github.com/Seeyou2000/SE_UNO_Project", [멀티플레이어 우노 프로젝트])에서 pygame 사용에 익숙하지 않은 팀원들을 위한 2D 게임 프레임워크 개발
-  - 선린인터넷고등학교 웹개발심화(웹게임) 소수전공 강사, #link("https://github.com/gidongkwon/light2d-es6", [강의용 프레임워크]) #display-year([2017])
-  - The Mechanics, 블록코딩 게임, 정보올림피아드 공모부문 동상 #display-year([2022 - 2024])
-  - 선린인터넷고등학교 게임개발기능반용 DirectX 9 2D 프레임워크 개발 #display-year([2014])
+  - 선린인터넷고등학교 웹개발심화(웹게임) 소수전공 강사, #link("https://github.com/gidongkwon/light2d-es6", [강의용 프레임워크]) #h(0.5em) #display-year([2017])
+  - The Mechanics, 블록코딩 게임, 정보올림피아드 공모부문 동상 #h(0.5em) #display-year([2022 - 2024])
+  - 선린인터넷고등학교 게임개발기능반용 DirectX 9 2D 프레임워크 개발 #h(0.5em) #display-year([2014])
 - Community Engagement
-  - 선린인터넷고등학교 해커톤, 경진대회 게임부문 심사위원 #display-year([2022 - 2024])
-  - 컴퓨터공학과 게임개발 동아리 PLUM 유니티 스터디 리더 #display-year([2022, 2023])
-  - #link("https://vivaldi.com/", [Vivaldi 브라우저]), #link("https://store.steampowered.com/app/287980/Mini_Metro/", [Mini Metro]) 한국어 번역 #display-year([2015, 2016])
+  - 선린인터넷고등학교 해커톤, 경진대회 게임부문 심사위원 #h(0.5em) #display-year([2022 - 2024])
+  - 컴퓨터공학과 게임개발 동아리 PLUM 유니티 스터디 리더 #h(0.5em) #display-year([2022, 2023])
+  - #link("https://vivaldi.com/", [Vivaldi 브라우저]), #link("https://store.steampowered.com/app/287980/Mini_Metro/", [Mini Metro]) 한국어 번역 #h(0.5em) #display-year([2015, 2016])
 
 = Education
 #table(
