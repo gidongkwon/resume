@@ -28,7 +28,7 @@
   name: "데브시스터즈",
   team: "쿠키런 킹덤",
   role: "클라이언트 엔지니어",
-  tech-stacks: (tech-stacks.csharp, tech-stacks.unity, tech-stacks.git),
+  tech-stacks: (tech-stacks.unity, tech-stacks.csharp, tech-stacks.git),
   date-from: datetime(year: 2018, month: 3, day: 5),
   date-to: datetime(year: 2020, month: 10, day: 31),
   summary: "쿠키런 킹덤의 전투 파트 구성원으로서 캐릭터의 스킬과 맵, 전투 시스템 관련 기능을 구현했습니다.",
