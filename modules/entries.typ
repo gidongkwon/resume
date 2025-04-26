@@ -20,7 +20,7 @@
       #set text(luma(35%))
       #summary
     ][
-      기술 스택 \
+      #text(weight: "medium")[기술 스택] \
       #tech-stack.chips-in-one(tech-stacks)
     ]
   ][
@@ -57,7 +57,7 @@
   summary: str,
   children,
 ) = _entry(
-  [#name],
+  text(weight: "medium")[#name],
   [#type \ #text(luma(35%))[#role]],
   [#summary],
   date-from,
@@ -72,7 +72,7 @@
 ) = block(
   below: 1.5em,
   [
-    - #title \
+    - #text(weight: "medium")[#title] \
       #text(luma(35%))[#description]
   ],
 )
