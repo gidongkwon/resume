@@ -54,7 +54,7 @@
   )
   #work-detail(
     title: [FCP 개선],
-    description: [Cloudflare CDN을 붙이고 SSR을 구현한 후 FCP가 비정상적으로 높아진 것을 발견했습니다. React Query를 통해 Hydration 되는 데이터의 크기가 비정상적으로 큰 것을 감지했습니다. 또한 BFF와 API서버 간 전송이 의도치 않게 Cloudflare를 통해 이루어지는 것이 RTT를 크게 증가시키는 원인이라는 것을 발견했습니다. 이를 해결하기 위해 브라우저 캐시를 활용할 수 있도록 Hydration 과정을 없애고 SSR과 CSR시 사용하는 데이터 소스를 분리하는 과정을 거치고, BFF와 API서버 간의 통신을 Cloudflare를 거치지 않고 직접 통신하도록 변경했습니다. 이로 인해 첫 접속 기준 FCP가 10초에서 1.5초 이내로 개선되었습니다.],
+    description: [Cloudflare CDN을 붙이고 SSR을 구현한 후 FCP가 비정상적으로 높아졌고, 원인을 분석한 결과 두 가지 문제를를 발견했습니다. 하나는 React Query를 통해 Hydration 되는 데이터의 크기가 비정상적으로 큰 것이었고, 또 하나는 BFF와 API서버 간 전송이 의도치 않게 Cloudflare를 통해 이루어지는 것이었습니다. 이를 해결하기 위해 브라우저 캐시를 활용할 수 있도록 Hydration 과정을 없애고 SSR과 CSR시 사용하는 데이터 소스를 분리하는 과정을 거치고, BFF와 API서버 간의 통신을 Cloudflare를 거치지 않고 직접 통신하도록 변경했습니다. 이로 인해 첫 접속 기준 FCP가 10초에서 1.5초 이내로 개선되었습니다.],
   )
   #work-detail(
     title: [방송용 위젯 표시를 위한 OBS Browser Plugin에서의 레이아웃 트러블슈팅],
