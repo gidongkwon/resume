@@ -9,49 +9,25 @@
 
 #text(24pt, weight: "bold")[권기동] Gidong Kwon
 
+#table(
+  rows: 2,
+  columns: 3,
+  stroke: none,
+  [GitHub], [Email], if config.show_mobile [Mobile],
+  link("https://github.com/gidongkwon", `gidongkwon`),
+  `lucidfext@gmail.com`,
+  if config.show_mobile [#raw(config.mobile)],
+)
+
 쓸모 있는 소프트웨어를 만드는 데 매력을 느끼는 개발자입니다. \
 고등학생 시절부터 게임 프로그래밍을 꾸준히 해오다, 지금은 웹 프론트엔드로 관심 분야를 옮겨왔습니다. \
 사용자 경험을 고려한 UI/UX 설계와 성능 최적화에 관심이 많습니다.
-
-#table(
-  columns: 2,
-  stroke: none,
-  [GitHub], link("https://github.com/gidongkwon", `gidongkwon`),
-  [Email], `lucidfext@gmail.com`,
-  ..if config.show_mobile {
-    ([Mobile], raw(config.mobile))
-  },
-)
-
-= Work Experience
-#company-entry(
-  name: "데브시스터즈",
-  team: "쿠키런 킹덤",
-  role: "클라이언트 엔지니어",
-  tech-stacks: (tech-stacks.unity, tech-stacks.csharp, tech-stacks.git),
-  date-from: datetime(year: 2018, month: 3, day: 5),
-  date-to: datetime(year: 2020, month: 10, day: 31),
-  summary: "쿠키런 킹덤의 전투 파트 구성원으로서 캐릭터의 스킬과 맵, 전투 시스템 관련 기능을 구현했습니다.",
-)[
-  #work-detail(
-    title: "전투 시스템 개발",
-    description: "캐릭터 스킬과 버프/디버프, 전투 상황에 따른 자연스러운 맵 루핑, 이동 등의 전투 시스템 전반의 개발에 참여했습니다. 엑셀 데이터를 기반으로 코딩을 하지 않고도 기획자의 작업을 통해서 스킬을 구현할 수 있도록 하는 시스템의 토대를 구현했습니다.",
-  )
-  #work-detail(
-    title: "맵툴 개발",
-    description: "유니티 에디터 확장 API와 Odin Inspector 플러그인을 활용하여 별도의 프로그램 전환 없이 유니티 프로젝트 내에서 맵을 제작하고 편집할 수 있는 툴을 구현했습니다.",
-  )
-  #work-detail(
-    title: "Unity Cache Server 도입으로 초기 프로젝트 로딩 속도 개선",
-    description: "프로젝트 규모가 커져감에 따라 초기 프로젝트 로딩 속도가 느려지는 문제가 있었습니다. 이를 해결하기 위해 빌드 서버에 Unity Cache Server(이후 Unity Accelerator)를 구축하여 10분 이상 걸리던 초기 프로젝트 로딩을 2분 이내로 400% 개선했습니다. 엔지니어 뿐만 아니라 아트, 기획팀 동료들에게도 좋은 반응을 얻었습니다.",
-  )
-]
 
 = Featured Project
 #project-entry(
   name: "aya.gg v1",
   type: (project-type.team)(2),
-  role: "디자인, 프론트엔드 개발",
+  role: "디자인(100%), 프론트엔드 개발(90%)",
   tech-stacks: (
     tech-stacks.react,
     tech-stacks.typescript,
@@ -60,12 +36,16 @@
     tech-stacks.stitches,
     tech-stacks.react-query,
     tech-stacks.jotai,
+    tech-stacks.i18next,
     tech-stacks.git,
+    tech-stacks.google-analytics,
+    tech-stacks.ms-clarity,
   ),
   date-from: datetime(year: 2021, month: 1, day: 11),
   date-to: datetime(year: 2024, month: 1, day: 4),
   summary: "쿼터뷰 배틀로얄 게임 이터널 리턴의 전적 검색, 통계, 도감 정보, 루트 시뮬레이터 등을 제공하는 웹사이트입니다.
-제가 팀에 참여했던 3년의 운영기간 동안 총 활성 세션 수 2,359,539를 기록하였습니다. 실 사용자들과 메신저, 메일, 댓글 등으로 피드백을 주고받으면서 제품을 유용하게 개선하는 경험을 했습니다.",
+제가 팀에 참여했던 3년의 운영기간 동안 총 활성 세션 수 2,359,539를 기록하였습니다.
+실 사용자들과 메신저, 메일, 댓글 등으로 피드백을 주고받으면서 제품을 유용하게 개선하는 경험을 했습니다.",
 )[
   #work-detail(
     title: "화면 크기 변경 퍼포먼스 개선, 모바일 환경에서의 입력 반응 속도 개선",
@@ -82,6 +62,32 @@
   #work-detail(
     title: "국제화 대응",
     description: "i18next를 사용하여 URL 베이스의 국제화를 구현했습니다. 한국어, 영어, 일본어, 프랑스어 4개 언어를 지원했습니다. 이후 코드젠 기반의 typesafe-i18n으로 마이그레이션하여 DX를 개선했습니다.",
+  )
+]
+
+#pagebreak()
+
+= Work Experience
+#company-entry(
+  name: "데브시스터즈",
+  team: "쿠키런 킹덤",
+  role: "클라이언트 엔지니어",
+  tech-stacks: (tech-stacks.unity, tech-stacks.csharp, tech-stacks.git, tech-stacks.spine),
+  date-from: datetime(year: 2018, month: 3, day: 5),
+  date-to: datetime(year: 2020, month: 10, day: 31),
+  summary: "쿠키런 킹덤의 전투 파트 구성원으로서 캐릭터의 스킬과 맵, 전투 시스템 관련 기능을 구현했습니다.",
+)[
+  #work-detail(
+    title: "전투 시스템 개발",
+    description: "캐릭터 스킬과 버프/디버프, 전투 상황에 따른 자연스러운 맵 루핑, 이동 등의 전투 시스템 전반의 개발에 참여했습니다. 엑셀 데이터를 기반으로 코딩을 하지 않고도 기획자의 작업을 통해서 스킬을 구현할 수 있도록 하는 시스템의 토대를 구현했습니다.",
+  )
+  #work-detail(
+    title: "맵툴 개발",
+    description: "유니티 에디터 확장 API와 Odin Inspector 플러그인을 활용하여 별도의 프로그램 전환 없이 유니티 프로젝트 내에서 맵을 제작하고 편집할 수 있는 툴을 구현했습니다.",
+  )
+  #work-detail(
+    title: "Unity Cache Server 도입으로 초기 프로젝트 로딩 속도 개선",
+    description: "프로젝트 규모가 커져감에 따라 초기 프로젝트 로딩 속도가 느려지는 문제가 있었습니다. 이를 해결하기 위해 빌드 서버에 Unity Cache Server(이후 Unity Accelerator)를 구축하여 10분 이상 걸리던 초기 프로젝트 로딩을 2분 이내로 400% 개선했습니다. 엔지니어 뿐만 아니라 아트, 기획팀 동료들에게도 좋은 반응을 얻었습니다.",
   )
 ]
 

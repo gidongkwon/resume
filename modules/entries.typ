@@ -7,17 +7,22 @@
 )
 
 #let _entry(header, sub-header, summary, date-from, date-to, tech-stacks, children) = block(above: 2em)[
-  #grid(rows: 4, row-gutter: 1em)[
-    #set text(14pt)
-    #header
-    #set text(10pt)
-    #sub-header
-    #h(1fr)
-    #date.display-range(date-from, date-to, show-duration: true)\
-  ][
-    #summary
-  ][
-    #tech-stack.chips(tech-stacks)
+  #grid(columns: (0.5fr, 1fr), gutter: 2em)[
+    #grid(rows: 5, gutter: 1.6em)[
+      #date.display-range(date-from, date-to, show-duration: true)\
+    ][
+      #set text(14pt)
+      #header
+    ][
+      #set text(10pt)
+      #sub-header
+    ][
+      #set text(luma(35%))
+      #summary
+    ][
+      기술 스택 \
+      #tech-stack.chips-in-one(tech-stacks)
+    ]
   ][
     #children
   ]
@@ -53,7 +58,7 @@
   children,
 ) = _entry(
   [#name],
-  [#type / #role],
+  [#type \ #text(luma(35%))[#role]],
   [#summary],
   date-from,
   date-to,
@@ -68,6 +73,6 @@
   above: 1em,
   [
     - #title \
-      #description
+      #text(luma(35%))[#description]
   ],
 )

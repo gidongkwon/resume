@@ -1,11 +1,11 @@
 #let tech-stacks = (
-  csharp: "C#",
-  unity: "Unity",
+  // VCS
+  git: "Git",
+  jj: "JJ(VCS)",
+  // Web
   react: "React",
   typescript: "TypeScript",
   python: "Python",
-  git: "Git",
-  jj: "JJ(VCS)",
   svelte: "Svelte",
   nextjs: "Next.js",
   remix: "Remix",
@@ -16,8 +16,15 @@
   react-query: "React Query",
   i18next: "i18next",
   jotai: "Jotai",
+  // Game
   directx9: "DirectX 9",
   cpp: "C++",
+  csharp: "C#",
+  unity: "Unity",
+  spine: "Spine",
+  // Others
+  google-analytics: "Google Analytics",
+  ms-clarity: "Microsoft Clarity",
   etc: "etc",
 )
 
