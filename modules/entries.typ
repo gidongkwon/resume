@@ -70,7 +70,7 @@
   title: str,
   description: str,
 ) = block(
-  above: 1em,
+  below: 1.5em,
   [
     - #title \
       #text(luma(35%))[#description]

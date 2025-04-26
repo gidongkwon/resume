@@ -21,14 +21,14 @@
 )
 
 쓸모 있는 소프트웨어를 만드는 데 매력을 느끼는 개발자입니다. \
-고등학생 시절부터 게임 프로그래밍을 꾸준히 해오다, 지금은 웹 프론트엔드로 관심 분야를 옮겨왔습니다. \
-사용자 경험을 고려한 UI/UX 설계와 성능 최적화에 관심이 많습니다.
+고등학생 시절부터 게임 프로그래밍을 꾸준히 해오다, 도구를 작성하고 쉽게 배포하여 많은 사람에게 공유할 수 있는 웹 프론트엔드에 매력을 느끼고 관심 분야를 옮겨왔습니다.
+사용자 경험을 고려한 UI 설계와 성능 최적화에 관심이 많습니다.
 
 = Featured Project
 #project-entry(
   name: [aya.gg v1],
   type: (project-type.team)(2),
-  role: [디자인(100%), 프론트엔드 개발(90%)],
+  role: [디자인(100%), 프론트엔드 개발(95%)],
   tech-stacks: (
     tech-stacks.react,
     tech-stacks.typescript,
@@ -80,7 +80,7 @@
 )[
   #work-detail(
     title: [전투 시스템 개발],
-    description: [캐릭터 스킬과 버프/디버프, 전투 상황에 따른 자연스러운 맵 루핑, 이동 등의 전투 시스템 전반의 개발에 참여했습니다. 엑셀 데이터를 기반으로 코딩을 하지 않고도 기획자의 작업을 통해서 스킬을 구현할 수 있도록 하는 시스템의 토대를 구현했습니다.],
+    description: [캐릭터 스킬, 버프/디버프, 전투 상황에 따른 자연스러운 맵 루핑, 이동 등의 시스템 전반의 개발에 참여했습니다. 엑셀 데이터를 기반으로 코딩을 하지 않고도 기획자의 작업을 통해서 스킬을 구현할 수 있도록 하는 시스템의 토대를 구현했습니다.],
   )
   #work-detail(
     title: [맵툴 개발],
@@ -96,7 +96,8 @@
 - Web #h(0.5em) #display-year([_2021-_]) #h(1fr) #chips-in-one((tech-stacks.react, tech-stacks.svelte, tech-stacks.typescript, tech-stacks.tailwind, tech-stacks.shadcn, tech-stacks.etc))
   - 오픈소스 영상 편집 소프트웨어 #link("https://github.com/cartesiancs/nugget-app", [Nugget]) 기여
     - 캔버스 기반 렌더러를 리팩토링하여 약 2000줄의 중복 코드 제거 #link("https://github.com/cartesiancs/nugget-app/pull/38", [\#38]) #link("https://github.com/cartesiancs/nugget-app/pull/33", [\#33])
-    - WebGL 필터 로직 재설계를 통한 UI 스터터링 제거 (평균 48ms -> 0.262ms, 18434% 개선) #link("https://github.com/cartesiancs/nugget-app/pull/36", [\#36])
+    - WebGL 필터 로직 재설계를 통한 UI 스터터링 제거 (워스트 케이스 평균 48ms -> 0.262ms, 18434% 개선) #link("https://github.com/cartesiancs/nugget-app/pull/36", [\#36])
+  - aya.gg v1 전체, v2 초기 개발 참여
   - #link("https://github.com/gidongkwon/ecs-collision-webworker", [ecs-collision-webworker]), Web Worker를 사용한 ECS 기반의 게임 충돌 계산 속도 개선 실험
   - #link("https://github.com/gidongkwon/logseq-plugin-tags", [logseq-plugin-tags]), Logseq에서 Obsidian의 태그 기능을 모사한 플러그인
   - kana-hangul, 일본어 가나를 한국어 발음으로 옮겨주는 ReScript 라이브러리 #badge([Private])

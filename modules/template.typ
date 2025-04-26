@@ -18,6 +18,17 @@
     it
   }
 
+  // https://forum.typst.app/t/how-to-change-spacing-between-list-items/999
+  set list(spacing: 1.1em)
+  // https://forum.typst.app/t/how-to-change-spacing-between-list-item-paragraphs/1060/2
+  show list: e => {
+    show par: p => {
+      p
+      v(1.1em, weak: true)
+    }
+    e
+  }
+
   // DEBUG
   // show block: set block(fill: red)
 
