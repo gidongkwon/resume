@@ -5,7 +5,6 @@
   // Web
   react: "React",
   typescript: "TypeScript",
-  python: "Python",
   svelte: "Svelte",
   nextjs: "Next.js",
   remix: "Remix",
@@ -25,6 +24,7 @@
   // Others
   google-analytics: "Google Analytics",
   ms-clarity: "Microsoft Clarity",
+  python: "Python",
   etc: "etc",
 )
 
