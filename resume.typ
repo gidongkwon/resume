@@ -21,7 +21,7 @@
 )
 
 쓸모 있는 소프트웨어를 만드는 데 매력을 느끼는 개발자입니다. \
-고등학생 시절부터 게임 프로그래밍을 꾸준히 해오다, 도구를 작성하고 쉽게 배포하여 많은 사람에게 공유할 수 있는 웹 프론트엔드에 매력을 느끼고 관심 분야를 옮겨왔습니다.
+고등학생 시절부터 게임 프로그래밍을 꾸준히 해오다, 사람들에게 도움이 되는 서비스를 보다 쉽게 배포하고 공유할 수 있는 웹 프론트엔드에 매력을 느끼고 관심 분야를 옮겨왔습니다.
 사용자 경험을 고려한 UI 설계와 성능 최적화에 관심이 많습니다.
 
 = Featured Project
@@ -50,15 +50,15 @@
 )[
   #work-detail(
     title: [화면 크기 변경 성능 개선, 모바일 환경에서의 입력 반응 속도 개선],
-    description: [루트 시뮬레이터의 지도는 이미지 맵(\<area>)으로 상호작용 영역을 잡은 후 그 위에 SVG를 그리는 식으로 동작합니다. 이때 두 영역의 크기를 동기화하기 위해 ResizeObserver를 사용했는데, 이것이 특정 브라우저나 환경에서 느린 성능을 보이는 것을 발견했습니다. 이를 해결하기 위해 SVG viewBox와 CSS transform을 활용하여 SVG의 크기를 조정하는 방식으로 변경했습니다. 이에 따라 모바일 환경에서의 입력 반응 속도 또한 개선되었습니다.],
+    description: [루트 시뮬레이터의 지도는 이미지 맵(\<area>)으로 상호작용 영역을 잡은 후 그 위에 SVG를 그리는 식으로 동작합니다. 이때 두 영역의 크기를 동기화하기 위해 ResizeObserver를 사용했는데, 이것이 특정 브라우저나 환경에서 느린 성능을 보이는 것을 발견했습니다. 이를 해결하기 위해 SVG viewBox와 CSS transform을 활용하여 SVG의 크기를 조정하는 방식으로 변경했습니다. 이에 따라 데스크탑 환경에서 화면 크기를 변경할 때의 스터터링과, 모바일 환경에서의 입력 반응 속도가 개선되었습니다.],
   )
   #work-detail(
     title: [FCP 개선],
-    description: [Cloudflare CDN을 붙이고 SSR을 구현한 후 FCP가 비정상적으로 높아졌고, 원인을 분석한 결과 두 가지 문제를 발견했습니다. 하나는 React Query를 통해 Hydration 되는 데이터의 크기가 비정상적으로 큰 것이었고, 또 하나는 BFF와 API 서버 간 전송이 의도치 않게 Cloudflare를 통해 이루어지는 것이었습니다. 이를 해결하기 위해 브라우저 캐시를 활용할 수 있도록 Hydration 과정을 없애고 SSR과 CSR시 사용하는 데이터 소스를 분리하는 과정을 거치고, BFF와 API 서버 간의 통신을 Cloudflare를 거치지 않고 직접 통신하도록 변경했습니다. 이에 따라 첫 접속 기준 FCP가 10초에서 1.5초 이내로 개선되었습니다.],
+    description: [Cloudflare CDN을 붙이고 SSR을 구현한 후 FCP가 비정상적으로 높아졌고, 원인을 분석한 결과 두 가지 문제를 발견했습니다. 하나는 React Query를 통해 hydration 되는 데이터의 크기가 비정상적으로 큰 것이었고, 또 하나는 BFF와 API 서버 간 전송이 의도치 않게 Cloudflare를 통해 이루어지는 것이었습니다. 이를 해결하기 위해 브라우저 캐시를 활용할 수 있도록 hydration 과정을 없애고 SSR과 CSR시 사용하는 데이터 소스를 분리하는 과정을 거치고, BFF와 API 서버 간의 통신을 Cloudflare를 거치지 않고 직접 통신하도록 변경했습니다. 이에 따라 첫 접속 기준 FCP가 10초에서 1.5초 이내로 개선되었습니다.],
   )
   #work-detail(
     title: [방송용 위젯 표시를 위한 OBS Browser Plugin에서의 레이아웃 트러블슈팅],
-    description: [OBS 크로미움의 버전이 77로 낮아 CSS grid와 flex를 쓸 수 없었습니다. 이미 사이트의 다른 부분은 완성되어 있었기 때문에 공통 사용 컴포넌트를 특정 환경 전용으로 작성하여 두 벌 관리해야 하는 상황에 처해있었습니다. CSS-in-JS 라이브러리 Stitches로 Flex 컴포넌트를 구현하여 레이아웃을 구성하고 있었기 때문에, 최대한 외부의 기존 레이아웃 코드를 건드리지 않고 Flex 컴포넌트 내부에서 분기하여 negative margin으로 gap 동작을 폴리필하는 코드를 추가하는 방식으로, wrap 동작의 정확성을 희생하여 코드베이스의 복잡도를 크게 늘리지 않는 선에서 관리할 수 있었습니다.],
+    description: [OBS 크로미움의 버전이 77로 낮아 CSS flex를 쓸 수 없었습니다. 이미 사이트의 다른 부분은 완성되어 있었기 때문에, 공통 사용 컴포넌트를 특정 환경 전용으로 작성하여 두 벌 관리해야 하는 상황에 처해있었습니다. 별도의 맥락이 생기는 것을 최대한 피하고자, 기존 레이아웃 코드를 건드리지 않고 Flex 컴포넌트 내부에서 분기하여 negative margin으로 gap 동작을 폴리필하는 코드를 추가하는 방식을 택했습니다. wrap 동작의 정확성은 희생하는 선택이었지만, 코드베이스의 복잡도를 크게 늘리지 않는 선에서 관리할 수 있었습니다.],
   )
   #work-detail(
     title: [국제화 대응],
@@ -84,7 +84,7 @@
   )
   #work-detail(
     title: [맵툴 개발],
-    description: [유니티 에디터 확장 API와 Odin Inspector 플러그인을 활용하여 별도의 프로그램 전환 없이 유니티 프로젝트 내에서 맵을 제작하고 편집할 수 있는 툴을 구현했습니다.],
+    description: [유니티 에디터 확장 API와 Odin Inspector 플러그인을 활용하여 외부 툴 대신 유니티 프로젝트 내에서 맵을 제작하고 편집할 수 있는 툴을 구현했습니다.],
   )
   #work-detail(
     title: [Unity Cache Server 도입으로 초기 프로젝트 로딩 속도 개선],
@@ -95,8 +95,8 @@
 = Experiences
 - Web #h(0.5em) #display-year([_2021-_]) #h(1fr) #chips-in-one((tech-stacks.react, tech-stacks.svelte, tech-stacks.typescript, tech-stacks.tailwind, tech-stacks.shadcn, tech-stacks.etc))
   - 오픈소스 영상 편집 소프트웨어 #link("https://github.com/cartesiancs/nugget-app", [Nugget]) 기여
-    - 캔버스 기반 렌더러를 리팩토링하여 약 2000줄의 중복 코드 제거 #link("https://github.com/cartesiancs/nugget-app/pull/38", [\#38]) #link("https://github.com/cartesiancs/nugget-app/pull/33", [\#33])
-    - WebGL 필터 로직 재설계를 통한 UI 스터터링 제거 (워스트 케이스 평균 48ms -> 0.262ms, 18434% 개선) #link("https://github.com/cartesiancs/nugget-app/pull/36", [\#36])
+    - 캔버스 기반 렌더러를 리팩토링하여 약 2,000줄의 중복 코드 제거 #link("https://github.com/cartesiancs/nugget-app/pull/38", [\#38]) #link("https://github.com/cartesiancs/nugget-app/pull/33", [\#33])
+    - WebGL 필터 로직 재설계를 통한 UI 스터터링 제거 (워스트 케이스 평균 48ms -> 0.262ms, 18,434% 개선) #link("https://github.com/cartesiancs/nugget-app/pull/36", [\#36])
   - aya.gg v1 전체 / v2 초기 개발 참여
   - #link("https://github.com/gidongkwon/ecs-collision-webworker", [ecs-collision-webworker]), Web Worker를 사용한 ECS 기반의 게임 충돌 계산 속도 개선 실험
   - #link("https://github.com/gidongkwon/logseq-plugin-tags", [logseq-plugin-tags]), Logseq에서 Obsidian의 태그 기능을 모사한 플러그인
