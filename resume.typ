@@ -45,16 +45,16 @@
   date-from: datetime(year: 2021, month: 1, day: 11),
   date-to: datetime(year: 2024, month: 1, day: 4),
   summary: [쿼터뷰 배틀로얄 게임 이터널 리턴의 전적 검색, 통계, 도감 정보, 루트 시뮬레이터 등을 제공하는 웹사이트입니다.
-    제가 팀에 참여했던 3년의 운영기간 동안 총 활성 세션 수 2,359,539를 기록하였습니다.
-    실 사용자들과 메신저, 메일, 댓글 등으로 피드백을 주고받으면서 제품을 유용하게 개선하는 경험을 했습니다.],
+    제가 팀에 참가했던 3년의 운영 기간 총 활성 세션 수 2,359,539를 기록하였습니다.
+    실사용자들과 메신저, 메일, 댓글 등으로 피드백을 주고받으면서 제품을 유용하게 개선하는 경험을 했습니다.],
 )[
   #work-detail(
-    title: [화면 크기 변경 퍼포먼스 개선, 모바일 환경에서의 입력 반응 속도 개선],
-    description: [루트 시뮬레이터의 지도는 이미지 맵(\<area>)으로 상호작용 영역을 잡은 후 그 위에 SVG를 그리는 식으로 동작합니다. 이때 두 영역의 크기를 동기화하기 위해 ResizeObserver를 사용했는데, 이것이 특정 브라우저나 환경에서 느린 성능을 보이는 것을 발견했습니다. 이를 해결하기 위해 SVG viewBox와 CSS transform을 활용하여 SVG의 크기를 조정하는 방식으로 변경했습니다. 이로 인해 모바일 환경에서의 입력 반응 속도 또한 개선되었습니다.],
+    title: [화면 크기 변경 성능 개선, 모바일 환경에서의 입력 반응 속도 개선],
+    description: [루트 시뮬레이터의 지도는 이미지 맵(\<area>)으로 상호작용 영역을 잡은 후 그 위에 SVG를 그리는 식으로 동작합니다. 이때 두 영역의 크기를 동기화하기 위해 ResizeObserver를 사용했는데, 이것이 특정 브라우저나 환경에서 느린 성능을 보이는 것을 발견했습니다. 이를 해결하기 위해 SVG viewBox와 CSS transform을 활용하여 SVG의 크기를 조정하는 방식으로 변경했습니다. 이에 따라 모바일 환경에서의 입력 반응 속도 또한 개선되었습니다.],
   )
   #work-detail(
     title: [FCP 개선],
-    description: [Cloudflare CDN을 붙이고 SSR을 구현한 후 FCP가 비정상적으로 높아졌고, 원인을 분석한 결과 두 가지 문제를를 발견했습니다. 하나는 React Query를 통해 Hydration 되는 데이터의 크기가 비정상적으로 큰 것이었고, 또 하나는 BFF와 API서버 간 전송이 의도치 않게 Cloudflare를 통해 이루어지는 것이었습니다. 이를 해결하기 위해 브라우저 캐시를 활용할 수 있도록 Hydration 과정을 없애고 SSR과 CSR시 사용하는 데이터 소스를 분리하는 과정을 거치고, BFF와 API서버 간의 통신을 Cloudflare를 거치지 않고 직접 통신하도록 변경했습니다. 이로 인해 첫 접속 기준 FCP가 10초에서 1.5초 이내로 개선되었습니다.],
+    description: [Cloudflare CDN을 붙이고 SSR을 구현한 후 FCP가 비정상적으로 높아졌고, 원인을 분석한 결과 두 가지 문제를 발견했습니다. 하나는 React Query를 통해 Hydration 되는 데이터의 크기가 비정상적으로 큰 것이었고, 또 하나는 BFF와 API 서버 간 전송이 의도치 않게 Cloudflare를 통해 이루어지는 것이었습니다. 이를 해결하기 위해 브라우저 캐시를 활용할 수 있도록 Hydration 과정을 없애고 SSR과 CSR시 사용하는 데이터 소스를 분리하는 과정을 거치고, BFF와 API 서버 간의 통신을 Cloudflare를 거치지 않고 직접 통신하도록 변경했습니다. 이에 따라 첫 접속 기준 FCP가 10초에서 1.5초 이내로 개선되었습니다.],
   )
   #work-detail(
     title: [방송용 위젯 표시를 위한 OBS Browser Plugin에서의 레이아웃 트러블슈팅],
@@ -80,7 +80,7 @@
 )[
   #work-detail(
     title: [전투 시스템 개발],
-    description: [캐릭터 스킬, 버프/디버프, 전투 상황에 따른 자연스러운 맵 루핑, 이동 등의 시스템 전반의 개발에 참여했습니다. 엑셀 데이터를 기반으로 코딩을 하지 않고도 기획자의 작업을 통해서 스킬을 구현할 수 있도록 하는 시스템의 토대를 구현했습니다.],
+    description: [캐릭터 스킬, 버프/디버프, 전투 상황에 따른 자연스러운 맵 루핑, 이동 등의 시스템 전반의 개발에 참여했습니다. 엑셀 데이터를 기반으로 코딩하지 않고도 기획자의 작업을 통해서 스킬을 구현할 수 있도록 하는 시스템의 토대를 구현했습니다.],
   )
   #work-detail(
     title: [맵툴 개발],
@@ -88,7 +88,7 @@
   )
   #work-detail(
     title: [Unity Cache Server 도입으로 초기 프로젝트 로딩 속도 개선],
-    description: [프로젝트 규모가 커져감에 따라 초기 프로젝트 로딩 속도가 느려지는 문제가 있었습니다. 이를 해결하기 위해 빌드 서버에 Unity Cache Server(이후 Unity Accelerator)를 구축하여 10분 이상 걸리던 초기 프로젝트 로딩을 2분 이내로 400% 개선했습니다. 엔지니어 뿐만 아니라 아트, 기획팀 동료들에게도 좋은 반응을 얻었습니다.],
+    description: [프로젝트 규모가 커짐에 따라 초기 프로젝트 로딩 속도가 느려지는 문제가 있었습니다. 이를 해결하기 위해 빌드 서버에 Unity Cache Server(이후 Unity Accelerator)를 구축하여 10분 이상 걸리던 초기 프로젝트 로딩을 2분 이내로 400% 개선했습니다. 엔지니어뿐만 아니라 아트, 기획팀 동료들에게도 좋은 반응을 얻었습니다.],
   )
 ]
 
@@ -97,7 +97,7 @@
   - 오픈소스 영상 편집 소프트웨어 #link("https://github.com/cartesiancs/nugget-app", [Nugget]) 기여
     - 캔버스 기반 렌더러를 리팩토링하여 약 2000줄의 중복 코드 제거 #link("https://github.com/cartesiancs/nugget-app/pull/38", [\#38]) #link("https://github.com/cartesiancs/nugget-app/pull/33", [\#33])
     - WebGL 필터 로직 재설계를 통한 UI 스터터링 제거 (워스트 케이스 평균 48ms -> 0.262ms, 18434% 개선) #link("https://github.com/cartesiancs/nugget-app/pull/36", [\#36])
-  - aya.gg v1 전체, v2 초기 개발 참여
+  - aya.gg v1 전체 / v2 초기 개발 참여
   - #link("https://github.com/gidongkwon/ecs-collision-webworker", [ecs-collision-webworker]), Web Worker를 사용한 ECS 기반의 게임 충돌 계산 속도 개선 실험
   - #link("https://github.com/gidongkwon/logseq-plugin-tags", [logseq-plugin-tags]), Logseq에서 Obsidian의 태그 기능을 모사한 플러그인
   - kana-hangul, 일본어 가나를 한국어 발음으로 옮겨주는 ReScript 라이브러리 #badge([Private])
