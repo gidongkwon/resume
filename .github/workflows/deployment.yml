@@ -25,7 +25,9 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
       - run: echo "show_mobile = false" >> config.toml
-      - run: mkdir www; typst compile --font-path fonts resume.typ www/resume-gidongkwon.pdf
+      - run: mkdir www
+      - run: typst compile --font-path fonts resume.typ www/resume-gidongkwon.pdf
+      - run: typst compile --font-path fonts portfolio.typ www/portfolio-gidongkwon.pdf
       - uses: actions/configure-pages@v4
       - uses: actions/upload-pages-artifact@v3
         with:

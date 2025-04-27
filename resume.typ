@@ -24,6 +24,8 @@
 고등학생 시절부터 게임 프로그래밍을 꾸준히 해오다, 사람들에게 도움이 되는 서비스를 보다 쉽게 배포하고 공유할 수 있는 웹 프론트엔드에 매력을 느끼고 관심 분야를 옮겨왔습니다.
 사용자 경험을 고려한 UI 설계와 성능 최적화에 관심이 많습니다.
 
+프로젝트에 대한 자세한 설명은 포트폴리오를 참고해주세요.
+
 = Featured Project
 #project-entry(
   name: [aya.gg v1],
@@ -49,20 +51,28 @@
     실사용자들과 메신저, 메일, 댓글 등으로 피드백을 주고받으면서 제품을 유용하게 개선하는 경험을 했습니다.],
 )[
   #work-detail(
-    title: [화면 크기 변경 성능 개선, 모바일 환경에서의 입력 반응 속도 개선],
-    description: [루트 시뮬레이터의 지도는 이미지 맵(\<area>)으로 상호작용 영역을 잡은 후 그 위에 SVG를 그리는 식으로 동작합니다. 이때 두 영역의 크기를 동기화하기 위해 ResizeObserver를 사용했는데, 이것이 특정 브라우저나 환경에서 느린 성능을 보이는 것을 발견했습니다. 이를 해결하기 위해 SVG viewBox와 CSS transform을 활용하여 SVG의 크기를 조정하는 방식으로 변경했습니다. 이에 따라 데스크탑 환경에서 화면 크기를 변경할 때의 스터터링과, 모바일 환경에서의 입력 반응 속도가 개선되었습니다.],
+    title: [루트 시뮬레이터 구현],
+    description: [루트 시뮬레이터는 최적의 아이템 파밍 경로를 찾아주는 도구로, 당시 원하는 기능을 가진 비슷한 도구가 없어 개발하게 되었습니다. 이미지 맵(\<area>)과 SVG viewBox, CSS transform의 조합으로 구현했습니다. 이후 *이터널 리턴 본 게임에 UX 측면에서 거의 그대로 이식*되었습니다.],
   )
   #work-detail(
-    title: [FCP 개선],
-    description: [Cloudflare CDN을 붙이고 SSR을 구현한 후 FCP가 비정상적으로 높아졌고, 원인을 분석한 결과 두 가지 문제를 발견했습니다. 하나는 React Query를 통해 hydration 되는 데이터의 크기가 비정상적으로 큰 것이었고, 또 하나는 BFF와 API 서버 간 전송이 의도치 않게 Cloudflare를 통해 이루어지는 것이었습니다. 이를 해결하기 위해 브라우저 캐시를 활용할 수 있도록 hydration 과정을 없애고 SSR과 CSR시 사용하는 데이터 소스를 분리하는 과정을 거치고, BFF와 API 서버 간의 통신을 Cloudflare를 거치지 않고 직접 통신하도록 변경했습니다. 이에 따라 첫 접속 기준 FCP가 10초에서 1.5초 이내로 개선되었습니다.],
-  )
-  #work-detail(
-    title: [방송용 위젯 표시를 위한 OBS Browser Plugin에서의 레이아웃 트러블슈팅],
-    description: [OBS 크로미움의 버전이 77로 낮아 CSS flex를 쓸 수 없었습니다. 이미 사이트의 다른 부분은 완성되어 있었기 때문에, 공통 사용 컴포넌트를 특정 환경 전용으로 작성하여 두 벌 관리해야 하는 상황에 처해있었습니다. 별도의 맥락이 생기는 것을 최대한 피하고자, 기존 레이아웃 코드를 건드리지 않고 Flex 컴포넌트 내부에서 분기하여 negative margin으로 gap 동작을 폴리필하는 코드를 추가하는 방식을 택했습니다. wrap 동작의 정확성은 희생하는 선택이었지만, 코드베이스의 복잡도를 크게 늘리지 않는 선에서 관리할 수 있었습니다.],
+    title: [방송용 위젯 구현],
+    description: [인터넷 방송인이 사용할 수 있는, 실시간으로 랭크 게임 점수와 전적이 갱신되는 방송용 위젯을 구현했습니다. CSS gap이 지원되지 않는 OBS 브라우저 플러그인의 크로미움 77이라는 레거시 환경에서도 \<Flex> 컴포넌트를 사용하는 데 문제가 없도록 엔지니어링했습니다.],
   )
   #work-detail(
     title: [국제화 대응],
-    description: [i18next를 사용하여 URL 베이스의 국제화를 구현했습니다. 한국어, 영어, 일본어, 프랑스어 4개 언어를 지원했습니다. 이후 코드젠 기반의 typesafe-i18n으로 마이그레이션하여 DX를 개선했습니다.],
+    description: [i18next를 사용하여 URL 기반의 국제화를 구현했습니다. 한국어, 영어, 일본어, 프랑스어 4개 언어를 지원했습니다. 이후 코드젠 기반의 typesafe-i18n으로 마이그레이션하여 DX를 개선했습니다.],
+  )
+  #work-detail(
+    title: [SSR 구현],
+    description: [Next.js 12를 사용하여 SSR을 구현했습니다. URL을 상태의 진실의 원천으로 두고, getServerSideProps()에서 QueryClient.prefetchQuery()를 사용하여 데이터를 미리 가져오는 방식을 적용했습니다.],
+  )
+  #work-detail(
+    title: [Google Analytics, Microsoft Clarity를 사용한 이용자 분석],
+    description: [사용자의 페이지 이동 패턴을 분석하여 많이 찾는 기능의 접근성을 강화하고, rage click이 일어나는 부분 등을 분석하여 개선했습니다.],
+  )
+  #work-detail(
+    title: [통계 페이지 구현],
+    description: [플레이어 개인과 특정 캐릭터의 그래프와 표를 포함한 통계를 볼 수 있는 페이지를 구현했습니다.],
   )
 ]
 
@@ -79,16 +89,16 @@
   summary: [쿠키런 킹덤의 전투 파트 구성원으로서 캐릭터의 스킬과 맵, 전투 시스템 관련 기능을 구현했습니다.],
 )[
   #work-detail(
-    title: [전투 시스템 개발],
-    description: [캐릭터 스킬, 버프/디버프, 전투 상황에 따른 자연스러운 맵 루핑, 이동 등의 시스템 전반의 개발에 참여했습니다. 엑셀 데이터를 기반으로 코딩하지 않고도 기획자의 작업을 통해서 스킬을 구현할 수 있도록 하는 시스템의 토대를 구현했습니다.],
+    title: [캐릭터 스킬, 버프/디버프 시스템 개발],
+    description: [초기에는 기획안을 바탕으로 전투 시스템과 캐릭터의 스킬을 구현했으며, 이후 프로그래머를 통하지 않고 유연하게 실험을 진행할 수 있도록 엑셀 데이터를 기반으로 코딩하지 않고도 스킬을 구현할 수 있도록 하는 시스템의 토대를 구현했습니다.],
+  )
+  #work-detail(
+    title: [맵 이동 시스템 개발],
+    description: [여러 캐릭터가 실시간으로 대형을 바꾸어 줄지어 뛰어가고 점프하며, 전투가 끝나기 전에는 특정 영역의 맵이 반복되도록 하는 시스템을 구현했습니다.],
   )
   #work-detail(
     title: [맵툴 개발],
     description: [유니티 에디터 확장 API와 Odin Inspector 플러그인을 활용하여 외부 툴 대신 유니티 프로젝트 내에서 맵을 제작하고 편집할 수 있는 툴을 구현했습니다.],
-  )
-  #work-detail(
-    title: [Unity Cache Server 도입으로 초기 프로젝트 로딩 속도 개선],
-    description: [프로젝트 규모가 커짐에 따라 초기 프로젝트 로딩 속도가 느려지는 문제가 있었습니다. 이를 해결하기 위해 빌드 서버에 Unity Cache Server(이후 Unity Accelerator)를 구축하여 10분 이상 걸리던 초기 프로젝트 로딩을 2분 이내로 400% 개선했습니다. 엔지니어뿐만 아니라 아트, 기획팀 동료들에게도 좋은 반응을 얻었습니다.],
   )
 ]
 
@@ -97,8 +107,8 @@
   - 오픈소스 영상 편집 소프트웨어 #link("https://github.com/cartesiancs/nugget-app", [Nugget]) 기여
     - 캔버스 기반 렌더러를 리팩토링하여 약 2,000줄의 중복 코드 제거 #link("https://github.com/cartesiancs/nugget-app/pull/38", [\#38]) #link("https://github.com/cartesiancs/nugget-app/pull/33", [\#33])
     - WebGL 필터 로직 재설계를 통한 UI 스터터링 제거 (워스트 케이스 평균 48ms -> 0.262ms, 18,434% 개선) #link("https://github.com/cartesiancs/nugget-app/pull/36", [\#36])
-  - aya.gg v1 전체 / v2 초기 개발 참여
-  - #link("https://github.com/gidongkwon/ecs-collision-webworker", [ecs-collision-webworker]), Web Worker를 사용한 ECS 기반의 게임 충돌 계산 속도 개선 실험
+  - aya.gg v1 전체 / v2 초기 개발 참여 #badge([Private])
+  - #link("https://github.com/gidongkwon/ecs-collision-webworker", [ecs-collision-webworker]), Web Worker를 사용한 ECS 기반의 게임 엔진 충돌 계산 속도 개선 실험
   - #link("https://github.com/gidongkwon/logseq-plugin-tags", [logseq-plugin-tags]), Logseq에서 Obsidian의 태그 기능을 모사한 플러그인
   - kana-hangul, 일본어 가나를 한국어 발음으로 옮겨주는 ReScript 라이브러리 #badge([Private])
   - noraebang, 위 라이브러리를 활용한 재생 싱크 동기화 방식 노래방 서비스 #badge([Private])
