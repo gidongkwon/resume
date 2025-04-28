@@ -45,8 +45,8 @@
   " "
 }
 
-#let chips-in-one(tech-stacks) = [
-  #set text(0.8em, luma(35%), font: "DejaVu Sans Mono", baseline: -0.1em)
+#let chips-in-one(tech-stacks, baseline: -0.1em) = [
+  #set text(0.8em, luma(35%), font: "DejaVu Sans Mono", baseline: baseline)
   #for stack in tech-stacks.slice(0, tech-stacks.len() - 1) {
     stack
     [, ]

@@ -80,6 +80,9 @@
 #let portfolio-entry-counter = counter("portfolio-entry");
 #let portfolio-entry-title(
   title,
+  date-from,
+  date-to,
+  link,
   tech-stacks,
 ) = [
   #portfolio-entry-counter.step()
@@ -87,8 +90,28 @@
     v(1.5em)
     line(length: 100%, stroke: (paint: luma(80%), dash: "dashed"))
   }
+
   = #title
-  #tech-stack.chips-in-one(tech-stacks)
+  #table(
+    align: horizon,
+    columns: if link == none { 2 } else { 3 },
+    inset: (
+      x: 8pt,
+      y: 2pt,
+    ),
+    stroke: (x, y) => if x > 0 {
+      (
+        left: (
+          paint: luma(80%),
+        ),
+      )
+    },
+    ..(
+      link,
+      date.display-range(date-from, date-to, show-duration: false),
+      tech-stack.chips-in-one(tech-stacks, baseline: 0em),
+    ).filter(x => x != none),
+  )
 ]
 
 #let portfolio-work-detail(

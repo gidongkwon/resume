@@ -19,6 +19,9 @@
 
 #portfolio-entry-title(
   [팀 프로젝트: aya.gg v1],
+  datetime(year: 2021, month: 1, day: 11),
+  datetime(year: 2024, month: 1, day: 4),
+  [#badge([Private])],
   (
     tech-stacks.react,
     tech-stacks.typescript,
@@ -65,6 +68,8 @@
       이를 SVG viewBox와 CSS transform 속성을 활용해 ResizeObserver 기술을 사용하지 않아도 되는 형태로 수정했습니다. 이에 따라 데스크탑 환경에서 화면 크기를 변경할 때의 스터터링과, 모바일 환경에서의 입력 반응 속도가 개선되었습니다.],
   )
 ]
+
+#pagebreak()
 
 #portfolio-work-detail(
   [방송용 위젯 구현],
@@ -141,6 +146,9 @@
 
 #portfolio-entry-title(
   [오픈소스 기여: Nugget],
+  datetime(year: 2025, month: 4, day: 7),
+  datetime.today(),
+  [#link("https://github.com/cartesiancs/nugget-app", [GitHub])],
   (tech-stacks.lit, tech-stacks.typescript, tech-stacks.zustand, tech-stacks.git, "Canvas", "WebGL"),
 )
 
@@ -156,7 +164,7 @@
   ),
 )[
   #work-detail(
-    title: [캔버스 기반 렌더러를 리팩토링하여 약 2,000줄의 중복 코드 제거 #link("https://github.com/cartesiancs/nugget-app/pull/38", [PR\#38]) #link("https://github.com/cartesiancs/nugget-app/pull/36", [PR\#36]) #link("https://github.com/cartesiancs/nugget-app/pull/33", [PR\#33])],
+    title: [캔버스 기반 렌더러를 리팩토링하여 약 2,000줄의 중복 코드 제거 #link("https://github.com/cartesiancs/nugget-app/pull/38", [PR\#38]), #link("https://github.com/cartesiancs/nugget-app/pull/36", [PR\#36]), #link("https://github.com/cartesiancs/nugget-app/pull/33", [PR\#33])],
     description: [
       프로젝트 오너와 프로젝트에 산재한 문제 중 가장 시급한게 무엇인지 우선순위를 논의했습니다. 1순위로 영상 익스포트에 사용되는 렌더러와 프리뷰(타임라인 에디터)에 사용되는 렌더러 코드가 중복되지만 미묘하게 달라 결과물에 일관성이 없는 문제를 선정했습니다. 이후 코드를 분석하여 코드가 담고 있는 관심사를 추출하고, 여러 관심사가 하나의 클래스나 함수에 모여있지 않도록 리팩토링 하는 과정을 거쳤고, 이렇게 적절히 추상화한 빌딩 블록을 바탕으로 익스포트 렌더러와 프리뷰 렌더러를 재작성했습니다. 결과 중복된 코드를 약 2,000줄 제거하고, 일관된 렌더링 동작을 얻을 수 있었습니다.
     ],
@@ -190,13 +198,19 @@
 
 // 지인들과 온라인 상에서 즐기기 위해 만든 노래방 반주 재생 서비스입니다. 다른 사람을 초대하거나, 다음에 재생할 노래를 큐에 미리 넣어놓거나, 노래 재생 시간을 옮기는 등의 기능이 있습니다.
 
-#portfolio-entry-title([팀 프로젝트: ecs-collision-webworker], (tech-stacks.typescript, "Web Worker"))
+#portfolio-entry-title(
+  [팀 프로젝트: ecs-collision-webworker],
+  datetime(year: 2024, month: 11, day: 25),
+  datetime(year: 2024, month: 12, day: 9),
+  [#link("https://github.com/gidongkwon/ecs-collision-webworker", [GitHub])],
+  (tech-stacks.typescript, tech-stacks.git, "WebGL", "Web Worker"),
+)
 
 빅데이터처리 과목의 팀 프로젝트입니다. 제 졸업 작품인 웹 게임 엔진의 충돌 처리 퍼포먼스를 개선하는 프로젝트로, 모든 코드 작성을 맡았습니다. 해당 엔진은 Entity-Component-System 설계로 만들어졌습니다. Entity는 핸들, Component는 데이터, System은 데이터를 받아 처리하는 함수 형태로 구성되는 설계입니다.
 
 #image("images/ecs-collision-webworker/ecs.png")
 
-#portfolio-work-detail([Web Worker를 사용한 성능 향상 실험], (tech-stacks.typescript, "WebGL", "Web Worker"))[
+#portfolio-work-detail([Web Worker를 사용한 성능 향상 실험], ("WebGL", "Web Worker"))[
   #grid(columns: 2, gutter: 0.5em)[
     #figure(
       image("images/ecs-collision-webworker/ecs-cpu-graph.png"),
@@ -241,7 +255,13 @@
   )
 ]
 
-#portfolio-entry-title([업무: 쿠키런 킹덤], (tech-stacks.unity, tech-stacks.csharp, tech-stacks.git, tech-stacks.spine))
+#portfolio-entry-title(
+  [업무: 쿠키런 킹덤],
+  datetime(year: 2018, month: 3, day: 5),
+  datetime(year: 2020, month: 10, day: 31),
+  none,
+  (tech-stacks.unity, tech-stacks.csharp, tech-stacks.git, tech-stacks.spine),
+)
 
 #portfolio-work-detail([DX 개선], ("Node.js",))[
   #work-detail(
