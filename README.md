@@ -2,6 +2,8 @@
 
 Resume built with Typst.
 
+[Resume](https://gidongkwon.github.io/resume/resume-gidongkwon.pdf) | [Portfolio](https://gidongkwon.github.io/resume/portfolio-gidongkwon.pdf)
+
 ## Build
 
 `typst compile resume.typ --font-path fonts`  
