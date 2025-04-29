@@ -239,16 +239,14 @@
       #colbreak()
 
       ```typescript
-      // 워커들의 작업을 Promise로 만들어 대기
+      // 작업을 Promise로 만들어 대기
       const workerPromises = cellEntries.map(([_, cellObjects], i) => {
         return new Promise<void>((resolve) => {
           const worker = workerPool[i];
-
           worker.onmessage = (e: MessageEvent) => {
             collisionsFromWorkers[i] = e.data as [number, number][];
             resolve();
           };
-
           worker.postMessage(Array.from(cellObjects));
         });
       });
