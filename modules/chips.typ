@@ -5,6 +5,7 @@
   // Web
   react: "React",
   typescript: "TypeScript",
+  rescript: "ReScript",
   svelte: "Svelte",
   lit: "Lit",
   nextjs: "Next.js",

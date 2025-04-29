@@ -79,7 +79,7 @@
 #pagebreak()
 
 = Experiences
-- Web #h(0.5em) #display-year([_2021-_]) #h(1fr) #chips-in-one((tech-stacks.react, tech-stacks.svelte, tech-stacks.typescript, tech-stacks.tailwind, tech-stacks.shadcn, tech-stacks.etc))
+- Web #h(0.5em) #display-year([_2021-_]) #h(1fr) #chips-in-one((tech-stacks.react, tech-stacks.svelte, tech-stacks.typescript, tech-stacks.nextjs, tech-stacks.reactrouter7, tech-stacks.tailwind, tech-stacks.shadcn, tech-stacks.etc))
   - 오픈소스 영상 편집 소프트웨어 #link("https://github.com/cartesiancs/nugget-app", [Nugget]) 기여
     - 캔버스 기반 렌더러를 리팩토링하여 약 2,000줄의 중복 코드 제거 #link("https://github.com/cartesiancs/nugget-app/pull/38", [\#38]) #link("https://github.com/cartesiancs/nugget-app/pull/33", [\#33])
     - WebGL 필터 로직 재설계를 통한 UI 스터터링 제거 (워스트 케이스 평균 48ms -> 0.262ms, 18,434% 개선) #link("https://github.com/cartesiancs/nugget-app/pull/36", [\#36])
