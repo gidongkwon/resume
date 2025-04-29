@@ -78,6 +78,27 @@
 
 #pagebreak()
 
+= Experiences
+- Web #h(0.5em) #display-year([_2021-_]) #h(1fr) #chips-in-one((tech-stacks.react, tech-stacks.svelte, tech-stacks.typescript, tech-stacks.tailwind, tech-stacks.shadcn, tech-stacks.etc))
+  - 오픈소스 영상 편집 소프트웨어 #link("https://github.com/cartesiancs/nugget-app", [Nugget]) 기여
+    - 캔버스 기반 렌더러를 리팩토링하여 약 2,000줄의 중복 코드 제거 #link("https://github.com/cartesiancs/nugget-app/pull/38", [\#38]) #link("https://github.com/cartesiancs/nugget-app/pull/33", [\#33])
+    - WebGL 필터 로직 재설계를 통한 UI 스터터링 제거 (워스트 케이스 평균 48ms -> 0.262ms, 18,434% 개선) #link("https://github.com/cartesiancs/nugget-app/pull/36", [\#36])
+  - aya.gg v1 전체 / v2 초기 개발 참여 #badge([Private])
+  - #link("https://github.com/gidongkwon/ecs-collision-webworker", [ecs-collision-webworker]), Web Worker를 사용한 ECS 기반의 게임 엔진 충돌 계산 속도 개선 실험
+  - #link("https://github.com/gidongkwon/logseq-plugin-tags", [logseq-plugin-tags]), Logseq에서 Obsidian의 태그 기능을 모사한 플러그인
+  - kana-hangul, 일본어 가나를 한국어 발음으로 옮겨주는 ReScript 라이브러리 #badge([Private])
+  - noraebang, 위 라이브러리를 활용한 재생 싱크 동기화 방식 노래방 서비스 #badge([Private])
+- Game Development #h(0.5em) #display-year([2014-]) #h(1fr) #chips-in-one((tech-stacks.unity, tech-stacks.csharp, tech-stacks.directx9, tech-stacks.cpp, tech-stacks.python, tech-stacks.etc))
+  - Unity 에디터 API를 활용한 엔진 내에서 사용할 수 있는 레벨 에디터 개발
+  - #link("https://github.com/Seeyou2000/SE_UNO_Project", [멀티플레이어 우노 프로젝트])에서 pygame 사용에 익숙하지 않은 팀원들을 위한 2D 게임 프레임워크 개발
+  - 선린인터넷고등학교 웹개발심화(웹게임) 소수전공 강사, #link("https://github.com/gidongkwon/light2d-es6", [강의용 프레임워크]) #h(0.5em) #display-year([2017])
+  - The Mechanics, 블록코딩 게임, 정보올림피아드 공모부문 동상 #h(0.5em) #display-year([2015])
+  - 선린인터넷고등학교 게임개발기능반용 DirectX 9 2D 프레임워크 개발 #h(0.5em) #display-year([2014])
+- Community Engagement
+  - 선린인터넷고등학교 해커톤, 경진대회 게임부문 심사위원 #h(0.5em) #display-year([2022 - 2024])
+  - 컴퓨터공학과 게임개발 동아리 PLUM 유니티 스터디 리더 #h(0.5em) #display-year([2022, 2023])
+  - #link("https://vivaldi.com/", [Vivaldi 브라우저]), #link("https://store.steampowered.com/app/287980/Mini_Metro/", [Mini Metro]) 한국어 번역 #h(0.5em) #display-year([2015, 2016])
+
 = Work Experience
 #company-entry(
   name: [데브시스터즈],
@@ -101,27 +122,6 @@
     description: [유니티 에디터 확장 API와 Odin Inspector 플러그인을 활용하여 외부 툴 대신 유니티 프로젝트 내에서 맵을 제작하고 편집할 수 있는 툴을 구현했습니다.],
   )
 ]
-
-= Experiences
-- Web #h(0.5em) #display-year([_2021-_]) #h(1fr) #chips-in-one((tech-stacks.react, tech-stacks.svelte, tech-stacks.typescript, tech-stacks.tailwind, tech-stacks.shadcn, tech-stacks.etc))
-  - 오픈소스 영상 편집 소프트웨어 #link("https://github.com/cartesiancs/nugget-app", [Nugget]) 기여
-    - 캔버스 기반 렌더러를 리팩토링하여 약 2,000줄의 중복 코드 제거 #link("https://github.com/cartesiancs/nugget-app/pull/38", [\#38]) #link("https://github.com/cartesiancs/nugget-app/pull/33", [\#33])
-    - WebGL 필터 로직 재설계를 통한 UI 스터터링 제거 (워스트 케이스 평균 48ms -> 0.262ms, 18,434% 개선) #link("https://github.com/cartesiancs/nugget-app/pull/36", [\#36])
-  - aya.gg v1 전체 / v2 초기 개발 참여 #badge([Private])
-  - #link("https://github.com/gidongkwon/ecs-collision-webworker", [ecs-collision-webworker]), Web Worker를 사용한 ECS 기반의 게임 엔진 충돌 계산 속도 개선 실험
-  - #link("https://github.com/gidongkwon/logseq-plugin-tags", [logseq-plugin-tags]), Logseq에서 Obsidian의 태그 기능을 모사한 플러그인
-  - kana-hangul, 일본어 가나를 한국어 발음으로 옮겨주는 ReScript 라이브러리 #badge([Private])
-  - noraebang, 위 라이브러리를 활용한 재생 싱크 동기화 방식 노래방 서비스 #badge([Private])
-- Game Development #h(0.5em) #display-year([2014-]) #h(1fr) #chips-in-one((tech-stacks.unity, tech-stacks.csharp, tech-stacks.directx9, tech-stacks.cpp, tech-stacks.python, tech-stacks.etc))
-  - Unity 에디터 API를 활용한 엔진 내에서 사용할 수 있는 레벨 에디터 개발
-  - #link("https://github.com/Seeyou2000/SE_UNO_Project", [멀티플레이어 우노 프로젝트])에서 pygame 사용에 익숙하지 않은 팀원들을 위한 2D 게임 프레임워크 개발
-  - 선린인터넷고등학교 웹개발심화(웹게임) 소수전공 강사, #link("https://github.com/gidongkwon/light2d-es6", [강의용 프레임워크]) #h(0.5em) #display-year([2017])
-  - The Mechanics, 블록코딩 게임, 정보올림피아드 공모부문 동상 #h(0.5em) #display-year([2015])
-  - 선린인터넷고등학교 게임개발기능반용 DirectX 9 2D 프레임워크 개발 #h(0.5em) #display-year([2014])
-- Community Engagement
-  - 선린인터넷고등학교 해커톤, 경진대회 게임부문 심사위원 #h(0.5em) #display-year([2022 - 2024])
-  - 컴퓨터공학과 게임개발 동아리 PLUM 유니티 스터디 리더 #h(0.5em) #display-year([2022, 2023])
-  - #link("https://vivaldi.com/", [Vivaldi 브라우저]), #link("https://store.steampowered.com/app/287980/Mini_Metro/", [Mini Metro]) 한국어 번역 #h(0.5em) #display-year([2015, 2016])
 
 = Education
 #table(
