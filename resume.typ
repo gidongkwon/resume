@@ -20,10 +20,13 @@
   if config.show_mobile [#raw(config.mobile)],
 )
 
-쓸모 있는 소프트웨어를 만드는 데 매력을 느끼는 개발자입니다. \
-고등학생 시절부터 게임 프로그래밍을 꾸준히 해오다, 사람들에게 도움이 되는 서비스를 보다 쉽게 배포하고 공유할 수 있는 웹 프론트엔드에 매력을 느끼고 관심 분야를 옮겨왔습니다.
-사용자 경험을 고려한 UI 설계와 성능 최적화에 관심이 많습니다.
+*사용자 경험을 생각합니다.* \
+서비스를 사용할 때 어떤 생각을 하게 되는지, 다른 요구사항을 생각하고 들어왔을 때 어떤 불편함이 생기는지 생각하고 개선하는 걸 즐깁니다. 이를 위한 효율적 UI 설계와 성능 최적화에 관심이 많습니다.
 
+*개발 경험을 생각합니다.* \
+팀원들도 서로의 코드에 대해서 사용자의 입장에 있다고 생각합니다. 적절한 추상화와 툴링, 코드젠 등 여러 수단을 통한 개발 경험 개선에 관심을 갖고 있습니다.
+
+산업기능요원으로서 게임 클라이언트 엔지니어로 일한 3년의 경험이 있지만 웹 프론트엔드로 직종을 변경하려고 합니다. 고등학생 시절부터 게임 프로그래밍을 꾸준히 해오다, 사람들에게 도움이 되는 서비스를 더욱 쉽게 배포하고 공유할 수 있는 웹 프론트엔드에 매력을 느끼고 관심 분야를 옮겨왔습니다. \
 프로젝트에 대한 자세한 설명은 포트폴리오를 참고해주세요.
 
 = Featured Project
@@ -72,32 +75,35 @@
   )
   #work-detail(
     title: [통계 페이지 구현],
-    description: [플레이어 개인과 특정 캐릭터의 그래프와 표를 포함한 통계를 볼 수 있는 페이지를 구현했습니다.],
+    description: [플레이어/특정 캐릭터의 그래프, 표를 포함한 종합적인 통계를 볼 수 있는 페이지를 구현했습니다.],
   )
 ]
 
 #pagebreak()
 
 = Experiences
-- Web #h(0.5em) #display-year([_2021-_]) #h(1fr) #chips-in-one((tech-stacks.react, tech-stacks.svelte, tech-stacks.typescript, tech-stacks.nextjs, tech-stacks.reactrouter7, tech-stacks.tailwind, tech-stacks.shadcn, tech-stacks.etc))
-  - 오픈소스 영상 편집 소프트웨어 #link("https://github.com/cartesiancs/nugget-app", [Nugget]) 기여
-    - 캔버스 기반 렌더러를 리팩토링하여 약 2,000줄의 중복 코드 제거 #link("https://github.com/cartesiancs/nugget-app/pull/38", [\#38]) #link("https://github.com/cartesiancs/nugget-app/pull/33", [\#33])
-    - WebGL 필터 로직 재설계를 통한 UI 스터터링 제거 (워스트 케이스 평균 48ms -> 0.262ms, 18,434% 개선) #link("https://github.com/cartesiancs/nugget-app/pull/36", [\#36])
-  - aya.gg v1 전체 / v2 초기 개발 참여 #badge([Private])
-  - #link("https://github.com/gidongkwon/ecs-collision-webworker", [ecs-collision-webworker]), Web Worker를 사용한 ECS 기반의 게임 엔진 충돌 계산 속도 개선 실험
-  - #link("https://github.com/gidongkwon/logseq-plugin-tags", [logseq-plugin-tags]), Logseq에서 Obsidian의 태그 기능을 모사한 플러그인
-  - kana-hangul, 일본어 가나를 한국어 발음으로 옮겨주는 ReScript 라이브러리 #badge([Private])
-  - noraebang, 위 라이브러리를 활용한 재생 싱크 동기화 방식 노래방 서비스 #badge([Private])
-- Game Development #h(0.5em) #display-year([2014-]) #h(1fr) #chips-in-one((tech-stacks.unity, tech-stacks.csharp, tech-stacks.directx9, tech-stacks.cpp, tech-stacks.python, tech-stacks.etc))
-  - Unity 에디터 API를 활용한 엔진 내에서 사용할 수 있는 레벨 에디터 개발
-  - #link("https://github.com/Seeyou2000/SE_UNO_Project", [멀티플레이어 우노 프로젝트])에서 pygame 사용에 익숙하지 않은 팀원들을 위한 2D 게임 프레임워크 개발
-  - 선린인터넷고등학교 웹개발심화(웹게임) 소수전공 강사, #link("https://github.com/gidongkwon/light2d-es6", [강의용 프레임워크]) #h(0.5em) #display-year([2017])
-  - The Mechanics, 블록코딩 게임, 정보올림피아드 공모부문 동상 #h(0.5em) #display-year([2015])
-  - 선린인터넷고등학교 게임개발기능반용 DirectX 9 2D 프레임워크 개발 #h(0.5em) #display-year([2014])
-- Community Engagement
-  - 선린인터넷고등학교 해커톤, 경진대회 게임부문 심사위원 #h(0.5em) #display-year([2022 - 2024])
-  - 컴퓨터공학과 게임개발 동아리 PLUM 유니티 스터디 리더 #h(0.5em) #display-year([2022, 2023])
-  - #link("https://vivaldi.com/", [Vivaldi 브라우저]), #link("https://store.steampowered.com/app/287980/Mini_Metro/", [Mini Metro]) 한국어 번역 #h(0.5em) #display-year([2015, 2016])
+== Web #h(0.5em) #display-year([_2021-_]) #h(1fr) #chips-in-one((tech-stacks.react, tech-stacks.svelte, tech-stacks.typescript, tech-stacks.nextjs, tech-stacks.tailwind, tech-stacks.shadcn, tech-stacks.etc))
+- 오픈소스 영상 편집 소프트웨어 #link("https://github.com/cartesiancs/nugget-app", [Nugget]) 기여
+  - 캔버스 기반 렌더러를 리팩토링하여 약 2,000줄의 중복 코드 제거 #link("https://github.com/cartesiancs/nugget-app/pull/38", [\#38]) #link("https://github.com/cartesiancs/nugget-app/pull/33", [\#33])
+  - WebGL 필터 로직 재설계를 통한 UI 스터터링 제거 (워스트 케이스 평균 48ms -> 0.262ms, 18,434% 개선) #link("https://github.com/cartesiancs/nugget-app/pull/36", [\#36])
+- aya.gg v1 전체 / v2 초기 개발 참여 #badge([Private])
+- #link("https://github.com/gidongkwon/ecs-collision-webworker", [ecs-collision-webworker]), Web Worker를 사용한 ECS 기반의 게임 엔진 충돌 계산 속도 개선 실험
+- #link("https://github.com/gidongkwon/logseq-plugin-tags", [logseq-plugin-tags]), Logseq에서 Obsidian의 태그 기능을 모사한 플러그인
+- kana-hangul, 일본어 가나를 한국어 발음으로 옮겨주는 ReScript 라이브러리 #badge([Private])
+- noraebang, 위 라이브러리를 활용한 재생 싱크 동기화 방식 노래방 서비스 #badge([Private])
+
+== Game Development #h(0.5em) #display-year([2014-]) #h(1fr) #chips-in-one((tech-stacks.unity, tech-stacks.csharp, tech-stacks.directx9, tech-stacks.cpp, tech-stacks.python, tech-stacks.etc))
+- Unity 에디터 API를 활용한 엔진 내에서 사용할 수 있는 레벨 에디터 개발
+- #link("https://github.com/Seeyou2000/SE_UNO_Project", [멀티플레이어 우노 프로젝트])에서 pygame 사용에 익숙하지 않은 팀원들을 위한 2D 게임 프레임워크 개발
+- 선린인터넷고등학교 웹개발심화(웹게임) 소수전공 강사, #link("https://github.com/gidongkwon/light2d-es6", [강의용 프레임워크]) #h(0.5em) #display-year([2017])
+- The Mechanics, 블록코딩 게임, 정보올림피아드 공모부문 동상 #h(0.5em) #display-year([2015])
+- 선린인터넷고등학교 게임개발기능반용 DirectX 9 2D 프레임워크 개발 #h(0.5em) #display-year([2014])
+
+== Community Engagement
+- 선린인터넷고등학교 해커톤, 경진대회 게임부문 심사위원 #h(0.5em) #display-year([2022 - 2024])
+- 컴공인의 밤 발표 - 게임업계 경험 #h(0.5em) #display-year([2023])
+- 컴퓨터공학과 게임개발 동아리 PLUM 유니티 스터디 리더 #h(0.5em) #display-year([2022, 2023])
+- #link("https://vivaldi.com/", [Vivaldi 브라우저]), #link("https://store.steampowered.com/app/287980/Mini_Metro/", [Mini Metro]) 한국어 번역 #h(0.5em) #display-year([2015, 2016])
 
 = Work Experience
 #company-entry(
