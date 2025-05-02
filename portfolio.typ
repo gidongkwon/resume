@@ -87,7 +87,7 @@
 )[
   #work-detail(
     title: [FCP 개선],
-    description: [Cloudflare CDN을 붙이고 SSR을 구현한 후 FCP가 비정상적으로 높아졌고, 원인을 분석한 결과 두 가지 문제를 발견했습니다. 하나는 React Query를 통해 hydration 되는 데이터의 크기가 비정상적으로 큰 것이었고, 또 하나는 BFF와 API 서버 간 전송이 의도치 않게 Cloudflare를 통해 이루어지는 것이었습니다. 이를 해결하기 위해 브라우저 캐시를 활용할 수 있도록 hydration 과정을 없애고 SSR과 CSR시 각각 fetch 하도록 구조를 바꾸고, BFF와 API 서버 간의 통신을 Cloudflare를 거치지 않고 직접 통신하도록 변경했습니다. 이에 따라 첫 접속 기준 FCP가 *10초에서 1.5초 이내로 개선*되었습니다.],
+    description: [Cloudflare CDN을 붙이고 SSR을 구현한 후 FCP가 비정상적으로 높아졌고, 원인을 분석한 결과 두 가지 문제를 발견했습니다. 하나는 React Query를 통해 hydration 되는 데이터의 크기가 비정상적으로 큰 것이었고, 또 하나는 BFF와 API 서버 간 전송이 의도치 않게 Cloudflare를 통해 이루어지는 것이었습니다. 이를 해결하기 위해 브라우저 캐시를 활용할 수 있도록 hydration 과정을 없애고 SSR과 CSR시 각각 fetch 하도록 구조를 바꾸고, BFF와 API 서버 간의 통신을 Cloudflare를 거치지 않고 직접 통신하도록 변경했습니다. 이에 따라 첫 접속 기준 FCP가 *10초에서 1.5초 이내로 560% 개선*되었습니다.],
   )
 ]
 
