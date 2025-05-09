@@ -20,11 +20,8 @@
   if config.show_mobile [#raw(config.mobile)],
 )
 
-*사용자 경험을 먼저 생각합니다.* \
+*사용자 경험을 생각합니다.* \
 서비스를 사용할 때 사용자 입장에서는 어떤 생각을 하게 되는지, 다른 요구사항을 생각하고 들어왔을 때 어떤 불편함이 생기는지 생각하고 개선하는 걸 즐깁니다. 이를 위한 효율적 UI 설계와 성능 최적화에 관심이 많습니다.
-
-*모든 개발자는 서로의 사용자입니다.* \
-코드베이스의 지속 가능성은 팀원들이 서로의 코드와 어떻게 상호작용하는지에 달려있다고 생각합니다. 컴포넌트 아키텍쳐나 타입 시스템을 활용한 적절한 추상화와 툴링, 코드젠 등 여러 수단을 통한 개발 경험 개선에 관심을 갖고 있으며, 새로운 도구를 시도해 보고 기존 도구와의 장단점을 비교하는 것을 즐깁니다.
 
 산업기능요원으로서 *게임 클라이언트 엔지니어로 일한 2년 7개월의 경험이 있지만 웹 프론트엔드로 커리어를 전환*하려고 합니다. \
 고등학생 시절부터 게임 프로그래밍을 꾸준히 해오다, 사람들에게 도움이 되는 서비스를 더욱 쉽게 배포하고 공유할 수 있는 웹 프론트엔드에 매력을 느끼고 관심 분야를 옮겨왔습니다. \
@@ -50,7 +47,7 @@
   ),
   date-from: datetime(year: 2021, month: 1, day: 11),
   date-to: datetime(year: 2024, month: 1, day: 4),
-  summary: [(v1 서비스 종료) 쿼터뷰 배틀로얄 게임 이터널 리턴의 전적 검색, 통계, 도감 정보, 루트 시뮬레이터 등을 제공하는 웹사이트입니다.
+  summary: [*(v1 서비스 종료)* 쿼터뷰 배틀로얄 게임 이터널 리턴의 전적 검색, 통계, 도감 정보, 루트 시뮬레이터 등을 제공하는 웹사이트입니다.
     제가 팀에 참가했던 3년의 운영 기간 총 활성 세션 수 2,359,539를 기록하였습니다.
     실사용자들과 메신저, 메일, 댓글 등으로 피드백을 주고받으면서 제품을 유용하게 개선하는 경험을 했습니다.],
 )[
@@ -83,7 +80,7 @@
 #pagebreak()
 
 = Experiences
-== Web #h(0.5em) #display-year([_2021-_]) #h(1fr) #chips-in-one((tech-stacks.react, tech-stacks.svelte, tech-stacks.typescript, tech-stacks.nextjs, tech-stacks.tailwind, tech-stacks.shadcn, tech-stacks.etc))
+== Web #h(0.5em) #display-year([_2021-_]) #h(1fr) #chips-in-one((tech-stacks.react, tech-stacks.typescript, tech-stacks.nextjs, tech-stacks.tailwind, tech-stacks.shadcn, tech-stacks.etc))
 - 오픈소스 영상 편집 소프트웨어 #link("https://github.com/cartesiancs/nugget-app", [Nugget]) 기여
   - 캔버스 기반 렌더러를 리팩토링하여 약 2,000줄의 중복 코드 제거 #link("https://github.com/cartesiancs/nugget-app/pull/38", [\#38]) #link("https://github.com/cartesiancs/nugget-app/pull/33", [\#33])
   - WebGL 필터 로직 재설계를 통한 UI 스터터링 제거 (워스트 케이스 평균 48ms -> 0.262ms, 18,434% 개선) #link("https://github.com/cartesiancs/nugget-app/pull/36", [\#36])
