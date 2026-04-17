@@ -5,105 +5,54 @@
 
 #show: template.with("이력서 - 권기동", "권기동")
 
-#let config = toml("config.toml")
-
-#text(24pt, weight: "bold")[권기동] Gidong Kwon
-
-#table(
-  rows: 2,
-  columns: 3,
-  column-gutter: 2em,
-  stroke: none,
-  [GitHub], [Email], if config.show_mobile [Mobile],
-  link("https://github.com/gidongkwon", `gidongkwon`),
-  `lucidfext@gmail.com`,
-  if config.show_mobile [#raw(config.mobile)],
+#grid(
+  columns: (1fr, auto),
+  [
+    #text(24pt, weight: "bold")[권기동] Gidong Kwon
+  ],
+  table(
+    inset: 3pt,
+    rows: 2,
+    columns: 2,
+    column-gutter: 2em,
+    stroke: none,
+    [GitHub], [Email],
+    link("https://github.com/gidongkwon", `gidongkwon`), `lucidfext@gmail.com`,
+  ),
 )
 
-*사용자 경험을 생각합니다.* \
-서비스를 사용할 때 사용자 입장에서는 어떤 생각을 하게 되는지, 다른 요구사항을 생각하고 들어왔을 때 어떤 불편함이 생기는지 생각하고 개선하는 걸 즐깁니다. 이를 위한 효율적 UI 설계와 성능 최적화에 관심이 많습니다.
+서비스를 사용할 때 사용자 입장에서는 어떤 생각을 하게 되는지, 사용자가 다른 요구사항을 기대하고 들어왔을 때 어떤 불편함이 생기는지 생각하고 개선하는 걸 즐깁니다. 이를 위한 효율적 UI 설계와 성능 최적화에 관심이 많습니다.
 
-산업기능요원으로서 *게임 클라이언트 엔지니어로 일한 2년 7개월의 경험이 있지만 웹 프론트엔드로 커리어를 전환*하려고 합니다. \
-고등학생 시절부터 게임 프로그래밍을 꾸준히 해오다, 사람들에게 도움이 되는 서비스를 더욱 쉽게 배포하고 공유할 수 있는 웹 프론트엔드에 매력을 느끼고 관심 분야를 옮겨왔습니다. \
-프로젝트에 대한 자세한 설명은 포트폴리오를 참고해주세요.
-
-= Featured Project
-#project-entry(
-  name: [aya.gg v1],
-  type: (project-type.team)(2),
-  role: [디자인(100%), 프론트엔드 개발(95%)],
-  tech-stacks: (
-    tech-stacks.react,
-    tech-stacks.typescript,
-    tech-stacks.nextjs,
-    tech-stacks.radix-ui,
-    tech-stacks.stitches,
-    tech-stacks.react-query,
-    tech-stacks.jotai,
-    tech-stacks.i18next,
-    tech-stacks.git,
-    tech-stacks.google-analytics,
-    tech-stacks.ms-clarity,
-  ),
-  date-from: datetime(year: 2021, month: 1, day: 11),
-  date-to: datetime(year: 2024, month: 1, day: 4),
-  summary: [*(v1 서비스 종료)* 쿼터뷰 배틀로얄 게임 이터널 리턴의 전적 검색, 통계, 도감 정보, 루트 시뮬레이터 등을 제공하는 웹사이트입니다.
-    제가 팀에 참가했던 3년의 운영 기간 총 활성 세션 수 2,359,539를 기록하였습니다.
-    실사용자들과 메신저, 메일, 댓글 등으로 피드백을 주고받으면서 제품을 유용하게 개선하는 경험을 했습니다.],
+= Work Experience
+#company-entry(
+  name: [Pensive],
+  team: [],
+  role: [Frontend Contractor (계약직)],
+  tech-stacks: (tech-stacks.react, tech-stacks.typescript, tech-stacks.tanstack-start, tech-stacks.firebase-rtdb),
+  date-from: datetime(year: 2025, month: 8, day: 19),
+  date-to: datetime(year: 2026, month: 4, day: 16),
+  summary: [실리콘밸리의 AI 교육 소프트웨어 스타트업 Pensive의 파트타임 프로그래머로서 React 기반 교육 SaaS 프런트엔드에서 평가·피드백·과제 관리 기능을 개발하며 복잡한 사용자 요구사항을 제품화했습니다.],
 )[
   #work-detail(
-    title: [루트 시뮬레이터 구현],
-    description: [루트 시뮬레이터는 최적의 아이템 파밍 경로를 찾아주는 도구로, 당시 원하는 기능을 가진 비슷한 도구가 없어 개발하게 되었습니다. 이미지 맵(\<area>)과 SVG viewBox, CSS transform의 조합으로 구현했습니다. 이후 *이터널 리턴 본 게임에 UX 측면에서 거의 그대로 이식*되었습니다.],
+    title: [AI-native 개발 플로우 경험],
+    description: [작은 팀으로 많은 일을 하기 위하여 AI Agent를 적극적으로 활용했습니다. Codex와 Claude Code를 병행 사용하며, 기획, 개발, 리뷰에 모두 AI를 적극적으로 활용하였으며, Human-in-the-Loop가 매우 중요하다고 생각합니다. 최신 AI 사용 기법들을 빠르게 접하고 사용해보는 것을 반복하며, AI 개발 트렌드를 실시간으로 파악하고자 노력했습니다.],
   )
   #work-detail(
-    title: [방송용 위젯 구현],
-    description: [인터넷 방송인이 사용할 수 있는, 실시간으로 랭크 게임 점수와 전적이 갱신되는 방송용 위젯을 구현했습니다. CSS gap이 지원되지 않는 OBS 브라우저 플러그인의 *크로미움 77이라는 레거시 환경에서도 \<Flex> 컴포넌트를 사용하는 데 문제가 없도록 엔지니어링*했습니다.],
+    title: [튜토리얼 시스템 구축],
+    description: [재사용 가능한 온보딩 튜토리얼 시스템을 구축했습니다. state machine, anchor registry/provider, gating, analytics tracking, debug tooling, E2E 테스트를 포함한 재사용 가능한 온보딩 인프라를 설계했습니다.],
   )
   #work-detail(
-    title: [SSR 구현],
-    description: [Next.js 12를 사용하여 SSR을 구현했습니다. Cloudflare CDN과 프로젝트 코드 문제가 얽혀 느려지는 문제를 해결하여 *FCP를 10초에서 1.5초로 560% 개선*한 경험이 있습니다.],
+    title: [Annotation 고도화],
+    description: [annotation 기반 평가 경험을 고도화해 anchored feedback, annotation-rubric matching, emoji annotation, 접근성 및 포커스 관리 개선까지 구현하며 평가자 인터랙션의 정확도와 완성도를 높였습니다.],
   )
   #work-detail(
-    title: [국제화 대응],
-    description: [i18next를 사용하여 URL 기반의 국제화를 구현했습니다. 한국어, 영어, 일본어, 프랑스어 4개 언어를 지원했습니다. 이후 코드젠 기반의 typesafe-i18n으로 마이그레이션하여 DX를 개선했습니다.],
-  )
-  #work-detail(
-    title: [Google Analytics, Microsoft Clarity를 사용한 이용자 분석],
-    description: [사용자의 페이지 이동 패턴을 분석하여 많이 찾는 기능의 접근성을 강화하고, rage click이 일어나는 부분 등을 분석하여 개선했습니다.],
-  )
-  #work-detail(
-    title: [통계 페이지 구현],
-    description: [플레이어/특정 캐릭터의 그래프, 표를 포함한 종합적인 통계를 볼 수 있는 페이지를 구현했습니다.],
+    title: [DX 개선],
+    description: [React Compiler 도입과 대규모 UI/라우팅 코드 정비를 수행하고, TanStack Start·Partial SSR 전환 과정의 인증 상태 처리 및 사용자 플로우 안정화에 기여했습니다.],
   )
 ]
 
-#pagebreak()
+#line(length: 100%, stroke: luma(90%))
 
-= Experiences
-== Web #h(0.5em) #display-year([_2021-_]) #h(1fr) #chips-in-one((tech-stacks.react, tech-stacks.typescript, tech-stacks.nextjs, tech-stacks.tailwind, tech-stacks.shadcn, tech-stacks.etc))
-- 오픈소스 영상 편집 소프트웨어 #link("https://github.com/cartesiancs/nugget-app", [Nugget]) 기여
-  - 캔버스 기반 렌더러를 리팩토링하여 약 2,000줄의 중복 코드 제거 #link("https://github.com/cartesiancs/nugget-app/pull/38", [\#38]) #link("https://github.com/cartesiancs/nugget-app/pull/33", [\#33])
-  - WebGL 필터 로직 재설계를 통한 UI 스터터링 제거 (워스트 케이스 평균 48ms -> 0.262ms, 18,434% 개선) #link("https://github.com/cartesiancs/nugget-app/pull/36", [\#36])
-- aya.gg v1 전체 / v2 초기 개발 참여 #badge([Private])
-- #link("https://github.com/gidongkwon/ecs-collision-webworker", [ecs-collision-webworker]), Web Worker를 사용한 ECS 기반의 게임 엔진 충돌 계산 속도 개선 실험
-- #link("https://github.com/gidongkwon/logseq-plugin-tags", [logseq-plugin-tags]), Logseq에서 Obsidian의 태그 기능을 모사한 플러그인
-- kana-hangul, 일본어 가나를 한국어 발음으로 옮겨주는 ReScript 라이브러리 #badge([Private])
-- noraebang, 위 라이브러리를 활용한 재생 싱크 동기화 방식 노래방 서비스 #badge([Private])
-
-== Game Development #h(0.5em) #display-year([2014-]) #h(1fr) #chips-in-one((tech-stacks.unity, tech-stacks.csharp, tech-stacks.directx9, tech-stacks.cpp, tech-stacks.python, tech-stacks.etc))
-- Unity 에디터 API를 활용한 엔진 내에서 사용할 수 있는 레벨 에디터 개발
-- #link("https://github.com/Seeyou2000/SE_UNO_Project", [멀티플레이어 우노 프로젝트])에서 pygame 사용에 익숙하지 않은 팀원들을 위한 2D 게임 프레임워크 개발
-- 선린인터넷고등학교 웹개발심화(웹게임) 소수전공 강사, #link("https://github.com/gidongkwon/light2d-es6", [강의용 프레임워크]) #h(0.5em) #display-year([2017])
-- The Mechanics, 블록코딩 게임, 정보올림피아드 공모부문 동상 #h(0.5em) #display-year([2015])
-- 선린인터넷고등학교 게임개발기능반용 DirectX 9 2D 프레임워크 개발 #h(0.5em) #display-year([2014])
-
-== Community Engagement
-- 선린인터넷고등학교 해커톤, 경진대회 게임부문 심사위원 #h(0.5em) #display-year([2022 - 2024])
-- 컴공인의 밤 발표 - 게임업계 경험 #h(0.5em) #display-year([2023])
-- 컴퓨터공학과 게임개발 동아리 PLUM 유니티 스터디 리더 #h(0.5em) #display-year([2022, 2023])
-- #link("https://vivaldi.com/", [Vivaldi 브라우저]), #link("https://store.steampowered.com/app/287980/Mini_Metro/", [Mini Metro]) 한국어 번역 #h(0.5em) #display-year([2015, 2016])
-
-= Work Experience
 #company-entry(
   name: [데브시스터즈],
   team: [쿠키런 킹덤],
@@ -126,6 +75,14 @@
     description: [유니티 에디터 확장 API와 Odin Inspector 플러그인을 활용하여 외부 툴 대신 유니티 프로젝트 내에서 맵을 제작하고 편집할 수 있는 툴을 구현했습니다.],
   )
 ]
+
+#line(length: 100%, stroke: luma(90%))
+
+= Community Engagement
+- 선린인터넷고등학교 해커톤, 경진대회 게임부문 심사위원 #h(0.5em) #display-year([2022 - 2024])
+- 컴공인의 밤 발표 - 게임업계 경험 #h(0.5em) #display-year([2023])
+- 컴퓨터공학과 게임개발 동아리 PLUM 유니티 스터디 리더 #h(0.5em) #display-year([2022, 2023])
+- #link("https://vivaldi.com/", [Vivaldi 브라우저]), #link("https://store.steampowered.com/app/287980/Mini_Metro/", [Mini Metro]) 한국어 번역 #h(0.5em) #display-year([2015, 2016])
 
 = Education
 #table(

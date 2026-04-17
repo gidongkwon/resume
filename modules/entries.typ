@@ -9,13 +9,13 @@
 #let _entry(header, sub-header, summary, date-from, date-to, tech-stacks, children) = block(above: 2em)[
   #grid(columns: (0.5fr, 1fr), gutter: 2em)[
     #grid(rows: 5, gutter: 1.6em)[
-      #date.display-range(date-from, date-to, show-duration: true)\
-    ][
       #set text(14pt, weight: "medium")
       #header
     ][
       #set text(10pt)
       #sub-header
+    ][
+      #date.display-range(date-from, date-to, show-duration: true)\
     ][
       #set text(luma(35%))
       #summary

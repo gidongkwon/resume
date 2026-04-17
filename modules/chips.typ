@@ -19,6 +19,9 @@
   jotai: "Jotai",
   zustand: "Zustand",
   framer-motion: "Framer Motion",
+  tanstack-start: "TanStack Start",
+  tanstack-query: "TanStack Query",
+  firebase-rtdb: "Firebase RTDB",
   // Game
   directx9: "DirectX 9",
   cpp: "C++",

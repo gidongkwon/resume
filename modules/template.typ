@@ -4,7 +4,7 @@
     margin: 1.5cm,
   )
   set document(title: title, author: author)
-  set text(font: "Pretendard", 10pt, lang: "ko")
+  set text(font: "Pretendard", 9.5pt, lang: "ko")
   set par(leading: 0.9em, spacing: 2em)
 
   show heading.where(level: 1): it => {
